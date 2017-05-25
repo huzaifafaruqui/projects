@@ -22,7 +22,7 @@ def gen_table(key):
 
 	table = [] #has to be 5x5
 	
-	for i in xrange(0, 26, 5):
+	for i in xrange(0, 25, 5):
 		table.append(key_[i:i+5])		
 
 	# table = [['p', 'l', 'a', 'y', 'f'], ['i', 'r', 'e', 'x', 'm'], ['b', 'c', 'd', 'g', 'h'], ['j', 'k', 'n', 'o', 's'], ['t', 'u', 'v', 'w', 'z'], []]
