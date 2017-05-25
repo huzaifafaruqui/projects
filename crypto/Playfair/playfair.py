@@ -54,6 +54,7 @@ def encrypt(msg, key='playfair example', mode='encrypt'):
 	for i in msg:
 		if j%2==1 and msg_[-1]==i:   #if the last element is same as current 
 			msg_+='x' #add extra x; pray that i is not equal to x :(
+			j+=1
 		j+=1
 		msg_+=i
 
