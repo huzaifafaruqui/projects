@@ -2,7 +2,7 @@
 	Columnar Transposition Cipher
 	Source: http://www.geeksforgeeks.org/columnar-transposition-cipher/
 	Author: Mohd Huzaifa Faruqui
-	Data: 23 May, 2017
+	Date: 23 May, 2017
 '''
 
 def get_order(key):
@@ -60,12 +60,9 @@ def decrypt(msg, key='HACK'):
 	#Split into characters
 	chars = list(msg)     # list('foo') = ['f','o','o']
 	
-
- 	#code to convert key to order 'HACK' = [3,1,2,4]
 	key_ = get_order(key)
 	matrix = [[None]*n for i in xrange(clen)]
 	
-
 	for i in xrange(n):
 		cno = key_[i] - 1 #Find key_[i]th column in text 
 		col = chars[cno*clen:(cno+1)*clen]   # col 1 will be substr char[0:clen] ; col 2 will be substr[clen:2*clen]...
